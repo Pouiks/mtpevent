@@ -1,17 +1,16 @@
 import styled from 'styled-components'
 import Image from '../components/Image'
-import { Link } from 'react-router-dom';
-
+import Reassurance from '../components/Reassurance'
+import StudentHome from '../components/StudentHome'
+import ProHome from '../components/ProHome'
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 
 const MainTitle = styled.h2`
     font-size: 35px;
 `
-const ContrainteTitle = styled.h3`
-color: #0693E3;
-font-size: 34px;
-font-weight: bold;
-`
+
 
 
 const TitleContainer = styled.div`
@@ -37,7 +36,7 @@ const H3title = styled.h3 `
     font-size: 34px;
     font-weight: bold;
     line-height: 55px;
-
+    text-align: justify;
 `
 const ParagDescription = styled.p`
     width: 30%;
@@ -45,40 +44,16 @@ const ParagDescription = styled.p`
     color: #343434;
     font-size: 20px;
     line-height: 40px;
+    text-align: justify;
 
 `
-const BasicContainer = styled.div`
-    display:flex;
-    width:80%;
-    margin: 0 auto;
-    gap: 30px;
-`
 
-const ItemsContainer= styled.div`
-    display: flex;
-    min-width: 33%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    color: #343434;
-    font-size: 20px;
-    
-`
 const Spacer = styled.div `
 height: 100px;
 `
 
-const BasicParag = styled.div`
-    width: 70%;
-    font-size: 30px;
-    color: #343434;
-    line-height: 55px;
-`
-const StudentContainer = styled.div`
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    width: 60%;
-`
+
+
 
 
 const Home = () => {
@@ -92,38 +67,18 @@ const Home = () => {
         <BodyContainer>
             <H3title>Vous êtes un particulier ou un pro, contactez nous et obtenez un devis en quelques heures.</H3title>
             <ParagDescription>
-                Soirée étudiante, à thème, afterwork, anniversaire ...
+                Soirée étudiante, à thème, afterwork, formation, anniversaire ...
                 Profitez de notre carnet d'adresse pour réserver votre salle dans les meilleurs conditions.
                 Notre équipe est à l'écoute de vos besoins et fera tout pour vous trouver le meilleur lieux pour votre événement.</ParagDescription>
         </BodyContainer>
-        <BasicContainer>
-            <ItemsContainer>
-                <img src="search.png" alt="" />
-                <p>Parcourez en quelques clics l'ensemble de nos partenaires</p>
-            </ItemsContainer>
-            <ItemsContainer>
-                <img src="bill.png" alt="" />
-                <p>Votre devis dans les plus brefs délais, et toutes les modalités !</p>
-            </ItemsContainer>
-            <ItemsContainer>
-                <img src="party.png" alt="" />
-                <p>Parcourez en quelques clics l'ensemble de nos partenaires</p>
-            </ItemsContainer>
-        </BasicContainer>
+        <Reassurance />
         <Spacer />
-        <StudentContainer>
-            <div>
-                <ContrainteTitle>Objectif zéro contrainte</ContrainteTitle>
-                <BasicParag sx={{fontSize: 30}}>Soirée étudiante ou à thème, de 50 à 1500 personnes, dans des lieux visités, approuvés et éprouvés !
-Loué vide ou avec du matériel sonore, débit de boisson, luminaire, décoration, agent de sécurité , DJ,  ... 
-C'est votre événement, on vous accompagne !</BasicParag>
-            </div>
-            <div>
-                <img src="students.jpg" width="400px" alt="Evénements étudiant"/>
-            </div>
-        </StudentContainer>
+        <StudentHome />
         <Spacer />
-            
+        <ProHome />
+        <Container>
+            <Typography>Ils nous font confiance</Typography>
+        </Container>
         </>
 
     )

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link, NavLink} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Nav = styled.nav`
   display: flex;
   flex-direction: row;

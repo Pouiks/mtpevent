@@ -1,0 +1,157 @@
+const data = [
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },
+    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    },    {
+        id: 1,
+        name:"La voile bleu",
+        capacity:200,
+        adress: "Av. de Carnon",
+        location: {
+            x:"43.56279",
+            y:"4.04095",
+        },
+        city: "La Grande Motte",
+        advantages: ["Débit de boisson sur place","Parking", "Matériel sono inclus", "Fumoir", "Equipe Agent de sécurité professionnel"],
+        image:"https://media-cdn.tripadvisor.com/media/photo-s/1d/1d/8e/0f/plage.jpg",
+    }
+
+]
+
+export default data;
