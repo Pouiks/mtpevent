@@ -36,6 +36,7 @@ const Partners = () => {
     return (
         <>
         <Container sx={{display:"flex", justifyContent:"space-between", flexWrap:"wrap"}}>
+        <div id="map"></div>
         <Typography>Utlisez notre outils de filtrage</Typography>
         <Box sx={{width:"100%", display:"flex"}}>
             <FormControl variant="standard" sx={{ m: 1, minWidth: 200 }}>

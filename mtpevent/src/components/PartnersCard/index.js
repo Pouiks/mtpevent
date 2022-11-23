@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -13,53 +14,39 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-import data from '../../data';
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
 
 const PartnersCard= (props) => {
+const navigate = useNavigate()
 
-
-
+const navigateToCard = () => {
+  navigate(`/partenaires/${props.id}`, {state: props})
+}
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 305 , mt:5, cursor:"pointer"}} onClick={() => navigateToCard()}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
             R
           </Avatar>
         }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
         title={props.name}
-        subheader="September 14, 2016"
+        subheader={props.city}
       />
+
       <CardMedia
         component="img"
         height="194"
-        image={props.image}
+        image={props.images[0].image}
         alt="Paella dish"
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+        <Typography variant="title3" color="text.secondary">
+          {props.desc}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
+      {/* PROBABLY USE TO GET FUTURE FAVORITE */}
+      {/* <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
@@ -67,7 +54,7 @@ const PartnersCard= (props) => {
           <ShareIcon />
         </IconButton>
 
-      </CardActions>
+      </CardActions> */}
     </Card>
   )
 }
